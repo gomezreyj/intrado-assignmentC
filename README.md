@@ -17,5 +17,5 @@ This list of words was generated using the web site at https://randomwordgenerat
 
 1. Clone the repository
 2. Go to the folder where the repository is created
-3. Using Java 1.8 execute the command: java -jar AssignmentA-1.0-SNAPSHOT.jar
+3. Using Java 1.8 execute the command: java -jar AssignmentC-1.0-SNAPSHOT.jar
 4. The application will show the result

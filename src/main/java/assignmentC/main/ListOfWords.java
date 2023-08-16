@@ -15,32 +15,32 @@ public class ListOfWords {
 
     public long wordsBeginWith(char c)
     {
-        //List<String> wordsList = Arrays.asList(words);
+        
         return wordsList.stream().filter(word -> Character.toLowerCase(word.charAt(0)) == c).count();
     }
 
     public long wordsEndingWith(char c)
     {
-        //List<String> wordsList = Arrays.asList(words);
+       
         return wordsList.stream().filter(word -> Character.toLowerCase(word.charAt(word.length() - 1)) == c).count();
     }
 
     public String shortestWordBeginsWith(char c) {
-        //List<String> wordsList = Arrays.asList(words);
+        
         Optional<String> shortestWord = wordsList.stream().filter(word -> Character.toLowerCase(word.charAt(0)) == c).reduce((w1,w2)-> w1.length() < w2.length() ? w1 : w2);
         return shortestWord.isPresent() ? shortestWord.get() : "none";
 
     }
 
     public String longestWordBeginsWith(char c) {
-        //List<String> wordsList = Arrays.asList(words);
+        
         Optional<String> shortestWord = wordsList.stream().filter(word -> Character.toLowerCase(word.charAt(0)) == c).reduce((w1, w2) -> w1.length() > w2.length() ? w1 : w2);
         return shortestWord.isPresent() ? shortestWord.get() : "none";
     }
 
     public double averageNumberCharactersBeginWith(char c)
     {
-        //List<String> wordsList = Arrays.asList(words);
+        
         return wordsList.stream().filter(word -> Character.toLowerCase(word.charAt(0)) == c).mapToInt(String::length).average().orElse(0);
     }
 

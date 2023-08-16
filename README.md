@@ -10,6 +10,8 @@ The following application will.
 *	The longest word that beings with the letter
 *	The average number of characters in words that begin with the letter
 
+This list of words was generated using the web site at https://randomwordgenerator.com/
+
 
 ## How to Run It
 
